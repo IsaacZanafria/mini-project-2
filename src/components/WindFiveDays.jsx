@@ -39,7 +39,7 @@ export default function WindFiveDays({lat, lon, value, grades}) {
           return (
             <div className="bg-[#1e213a] w-31 h-40 py-3" key={item?.dt}>
               <h2 className="text-white font-semibold w-[90%] mx-auto text-center tracking-tight">{last}</h2>
-              <img className="size-19 ml-5" src={`/src/img/${item?.weather?.[0]?.icon}.png`} alt="img" />
+              <img className="size-19 ml-5" src={`img/${item?.weather?.[0]?.icon}.png`} alt="img" />
               <div className="w-[90%] flex justify-center gap-2 mx-auto mt-[7px]">
                 <p className="text-white font-semibold tracking-tight">{parseInt(item?.main?.temp_min)}{grades}</p>
                 <p className="text-gray-500 font-semibold tracking-tight">{parseInt(item?.main?.temp_max)}{grades}</p>
