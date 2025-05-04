@@ -45,10 +45,10 @@ console.log(last)
 
         {/*imagen clima*/}
         <div className=" h-[30%] w-full relative flex justify-center items-center mt-2">
-          <img src="./src/img/cloud-background.png" className="opacity-20 w-full h-full object-cover" alt="cloud_png" />
+          <img src="/src/img/cloud-background.png" className="opacity-20 w-full h-full object-cover" alt="cloud_png" />
 
           <div className="absolute w-[30%] md:w-[50%] lg:w-[30%] h-[50%]">
-            <img className="" src={`./src/img/${response?.weather?.[0]?.icon}.png`} alt="" />
+            <img className="" src={`/src/img/${response?.weather?.[0]?.icon}.png`} alt="" />
           </div>
         </div>
 
